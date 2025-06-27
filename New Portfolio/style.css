@@ -1,0 +1,281 @@
+/* Header */
+
+body {
+    border: 0;
+    margin: 0;
+}
+
+#nav {
+    background: linear-gradient(to right,
+            /* red, yellow*/
+            black, rgb(7, 7, 7), rgb(26, 25, 25));
+    height: 25px;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+
+#name {
+    margin-left: 10px;
+    color: aqua;
+    font-size: 20px;
+}
+
+#brief {
+    font-weight: bold;
+    font-size: 20px;
+    color: #90caf9;
+    /* margin-left: 500px;*/
+    position: absolute;
+    left: 40%;
+}
+
+
+/* Main */
+/* About */
+
+.AboutMe {
+    height: 100vh;
+    text-align: center;
+    /* position: relative; */
+    background-image: url("bg1.jpg");
+    background-size: cover;
+}
+
+#heading {
+    font-size: 35px;
+    text-decoration: underline grey wavy 2px;
+    margin: 0;
+    background: linear-gradient(to right, #ffc800, #fdd44b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#name2 {
+    text-align: left;
+    height: 40vh;
+    width: 25vw;
+    padding: 20px;
+    position: absolute;
+    left: 80px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: linear-gradient(to right, black, rgb(7, 7, 7), rgb(26, 25, 25));
+}
+
+#im {
+    color: #DFD0B8;
+    font-size: 32px;
+}
+
+#Sam {
+    font-size: 32px;
+
+
+}
+
+.profile-pic {
+    width: 350PX;
+    /* size of the image */
+    height: 350PX;
+    border-radius: 50%;
+    /* makes it circular */
+    object-fit: cover;
+    /* keeps aspect ratio */
+    border: 3px solid #555;
+    /* optional border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* optional shadow */
+    margin-LEFT: 20VW;
+}
+
+
+/* skills */
+.Skills {
+    height: 100vh;
+    text-align: center;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+
+}
+
+#txt {
+    width: 70vw;
+    font-size: 34px;
+    position: relative;
+    left: 20px;
+}
+
+#skills {
+    height: 300px;
+    width: 70vw;
+    text-align: left;
+}
+
+#ulist {
+    font-size: 28px;
+}
+
+.skills-grid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skill-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    color: #DFD0B8;
+    font-weight: 500;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#React:hover {
+    transform: rotateZ(180deg);
+    transition-duration: 2s;
+
+}
+
+
+.Project {
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    background-image: url("bg5.jpg");
+    background-size: cover;
+}
+
+#project_cal {
+    color: #697565;
+    text-align: left;
+    font-size: 34px;
+}
+
+#description {
+    color: #DFD0B8;
+    font-size: 28px;
+    text-align: left;
+    
+}
+
+#cal_pic {
+    width: 100%;
+    max-width:450px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url("calculater.png");
+    background-size: contain;
+}
+
+.Resume {
+    height: 100vh;
+    text-align: center;
+    background-image: url("bg3.jpg");
+    background-size: cover;
+}
+
+#res {
+    font-size: 28px;
+    color: #DFD0B8;
+    height: 40vh;
+    width: 40vw;
+    margin-top: 120px;
+    font-family: cursive;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #2c80b4;
+}
+
+
+.Contact {
+    text-align: center;
+    height: 100vh;
+    background-image: url("bg4.jpg");
+    background-size: cover;
+}
+
+#con {
+    height: 40vh;
+    width: 40vw;
+    margin-top: 120px;
+    font-size: 26px;
+    color: #DFD0B8;
+}
+
+footer {
+    display: static;
+}
+
+#foot {
+    text-align: center;
+    color: #82992e;
+    height: 10vh;
+    width: 100vw;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+
+    a {
+        color: #90caf9;
+    }
+
+    .card {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+    }
+}
+
+
+.profile-pic {
+    animation: pulseGlow 2s infinite;
+    border-radius: 50%;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.5);
+    }
+}
